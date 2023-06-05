@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+:root {
+    --Primary_color : black;
+    --Secondary_color : white;
+    --Primary_bgcolor : aliceblue;
+    --form_bgcolor : white;
+    --submit_button_color : rgb(116, 116, 245);
+}
+
+a{
+    text-decoration: none;
+    color: var(--Primary_color);
+}
+
+body{
+background-color: var(--Primary_bgcolor);
+color: var(--Primary_color);
+}
+
+.logo{
+    width: 50%;
+    transition: 0.25s;
+    
+}
+
+.login{
+    width: 40%;
+    background-color: var(--form_bgcolor);
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+}
+
+form input{
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(116, 116, 245);
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+.login #submit{
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: var(--submit_button_color);
+    color: var(--Primary_color);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.color h2{
+    display:inline-block;
+     margin-right: 10px;
+     color: var(--Primary_color);
+}
+
+.login h2{
+    color: var(--Primary_color);
+}
+    
+.showpass {
+    position: absolute;
+    top: 58%;
+    right: 200px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.color{
+    margin-top: 30px;
+    margin-right: 80px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;   
+    justify-content: end;
+}
+
+.color button{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.color button span{
+    width: 100%;
+    height: 100%;
+    display: block;
+   
+}
+
+.color button .light{
+    background-color: yellow;
+    color: var(--Primary_color);
+    transition: 0.35s; 
+}
+
+.color button .dark {
+    background-color: #3F3534;
+    color: var(--Secondary_color);
+}
+
+.color button:hover .light{
+    margin-top: -40px;
+}
+body.darkmode{
+    --Primary_color : white;
+    --Secondary_color : black;
+    --Primary_bgcolor : #3F3534;
+    --form_bgcolor: #645553;
+    --submit_button_color : rgb(143, 102, 90); 
+    transition: 0.35s;
+}
+
